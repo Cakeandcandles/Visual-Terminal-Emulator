@@ -1,0 +1,56 @@
+body {
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal {
+  background: #000;
+  padding: 1rem;
+  width: 90%;
+  max-width: 800px;
+  height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px #0f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-title { 
+  text-align: center; 
+  color: #0f0;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+#output {
+  flex-grow: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin-bottom: 0.5rem;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 0.5rem;
+}
+
+#terminal-input {
+  background: transparent;
+  border: none;
+  color: #0f0;
+  outline: none;
+  font: inherit;
+  width: 100%;
+}
